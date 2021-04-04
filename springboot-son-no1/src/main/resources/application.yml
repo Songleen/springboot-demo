@@ -1,0 +1,24 @@
+
+# Key Value类型
+server:
+  port: 9000
+
+# 对象类型
+user: {name: 123,password: 321,date: 2019-11-12,dateTime: 2020-11-12 12:12:12}
+
+# 数组类型和集合类型
+teacher:
+ users: [{name: 456,password: 654,date: 2019-11-12,dateTime: 2020-11-12 12:12:12},
+        {name: 567,password: 765,date: 2019-11-12,dateTime: 2020-11-12 12:12:12}]
+ students:
+   - {name: xiaoming,password: 345}
+   - {name: huang,password: 456}
+ dogs:
+  -dog1
+  -dog2
+  -dog3
+
+# 日期类型，如果用String接收没有问题，如果要用date格式接收，
+# 需要声明一个日期转换器 或者使用注解转换
+date: 2019-12-01
+
